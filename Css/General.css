@@ -1,0 +1,233 @@
+body{
+    margin: 0 0;
+    padding: 0 0;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    background-color: #646464;
+    color: #fff;
+}
+
+.Contenedor_Header{
+    padding-top: 3vw;
+    padding-bottom: 1vw;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+} 
+
+#Box_Logo{
+    width: 25%;
+}
+
+#Box_Text_Logo{
+    width: 75%;
+}
+
+#Logo_Principal{
+    width: 30vw;
+    height: 9vw;
+}
+
+#Box_Text_Logo p{
+    padding-top: 1vw;
+    padding-left: 25vw;
+    padding-right: 4vw;
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Bitter', serif;
+}
+
+nav hr{
+    size: 1px;
+}
+
+.Contenedor_Nav{
+    display: inline;
+}
+
+.Nav_Link{
+    padding-left: 1vw;
+    padding-right: 0.5vw;
+    font-size: 17px;
+    color: #fff;
+    font-family: 'Bitter', serif;
+}
+
+.Nav_Link{
+    position:relative;
+    display: inline-block;
+    padding: 5px 5px;
+    color:#FFFFFF ;
+    letter-spacing: 4px;
+    font-size: 15px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    margin:0;
+    border: 0;
+    width: 250px;
+    height:100px;
+    
+    
+}
+
+.Nav_Link:Hover{
+    background:#a945c7;
+    box-shadow: 0 0 10px #a945c7, 0 0 40px
+    #a945c7, 0 0 80px #a945c7;
+}
+
+.Contenedor_Text{
+    margin-bottom: 2vw;
+    background-color: #484848;
+    display: block;
+    width: 79vw;
+    height: 90vw;
+    padding: 1vw 3vw;
+}
+
+.Contenedor_Text_Alimentacion{
+    margin-bottom: 2vw;
+    background-color: #484848;
+    display: block;
+    width: 79vw;
+    height: 69vw;
+    padding: 1vw 3vw;
+    
+}
+
+.Contenedor_Text_Trucos{
+    margin-bottom: 2vw;
+    background-color: #484848;
+    display: block;
+    width: 79vw;
+    height: 250vw;
+    padding: 1vw 3vw;
+    
+}
+
+.Contenedor_Text_Consejos{
+    margin-bottom: 2vw;
+    background-color: #484848;
+    display: block;
+    width: 79vw;
+    height: 110vw;
+    padding: 1vw 3vw;
+}
+
+.Contenedor_Text_Razas{
+    margin-bottom: 2vw;
+    background-color: #484848;
+    width: 79vw;
+    height: 300vw;
+    padding: 1vw 3vw;
+    display: block;
+}
+
+.Caja_Razas{
+    display: inline-block;
+    background-color: #a945c7;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.Hide{
+    display: none;
+}
+
+
+h1{
+    text-align: center;
+    color: #a945c7;
+    font-family: 'Tilt Warp', cursive;
+    
+}
+
+h2{
+    color: #0e92b9;
+    font-family: 'Tilt Warp', cursive;
+    
+}
+
+h3{
+    color: #0e92b9;
+    font-family: 'Tilt Warp', cursive;
+}
+
+h4{
+    color: #0e92b9;
+}
+
+p{
+    font-size: 19px;
+}
+
+ul li{
+    font-size: 19px;
+}
+
+#Logo_Nosotros{
+    width: 29%;
+    padding-left: 35.5%;
+}
+
+
+.Centrar{
+    text-align: center;
+}
+
+.button_Perros{
+    margin-left: 14vw;
+    margin-right: 1vw;
+    background-color:#a945c7;
+    border: none;
+    border-radius: 40px;
+    font-size: 1.2em;
+    box-shadow: 0px 0px 10px 0px #a945c7;
+    cursor: pointer;
+}
+
+.button_Perros:hover{
+    box-shadow: none;
+    background-color: #000;
+    color: #fff;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1)3;
+}
+
+.Img_Razas{
+    width: 232px;
+    height: 174px;
+}
+
+.Img_Trucos{
+    width: 232px;
+    height: 174px;
+}
+
+.Img_Vacuna{
+    width: 232px;
+    height: 174px;
+    padding-left: 2vw;
+}
+
+.Img_Alimentos{
+    width: 232px;
+    height: 174px;
+    padding-left: 2vw;
+}
+
+
+#Footer{
+    margin-left: -9vw;
+    margin-right: 0vw;
+
+    background-color: black;
+    width: 118.8%;
+    height: 12vw;
+}
+
+footer div{
+    padding: 1vw 3vw;
+    text-align: center;
+
+}

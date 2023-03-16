@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/General.css">
+    <link rel="icon" href="../Imagenes/Logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&display=swap" rel="stylesheet">
+    <script src="Script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+    <title>Razas</title>
+</head>
+<body>
+    <header>
+        <div class="Contenedor_Header">
+            <div id="Box_Logo">
+                <a href="../index.html"><img src="../Imagenes/LoveDogs_Delgado.png" id="Logo_Principal"></a>
+            </div>
+            <div id="Box_Text_Logo">
+                <p>
+                    Nosotros nos Especializamos
+                    <br>
+                    En el Cuidado de tu Mejor Amigo!!.
+                </p>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <hr>
+        <ul style="padding-left: 0; text-align: center;">
+            <li class="Contenedor_Nav">
+                <a href="Razas.html" class="Nav_Link">Razas más comunes</a>
+            </li>
+            <li class="Contenedor_Nav">
+                <a href="Alimentacion.html" class="Nav_Link">Alimentación</a>
+            </li>
+            <li class="Contenedor_Nav">
+                <a href="Vacunas_Cuidados.html" class="Nav_Link">Vacunas y Cuidados Especiales</a>
+            </li>
+            <li class="Contenedor_Nav">
+                <a href="Consejos.html" class="Nav_Link">Consejos Generales</a>
+            </li>
+            <li class="Contenedor_Nav">
+                <a href="Trucos.html" class="Nav_Link">Trucos para adestrar a tu cachorro</a>
+            </li> 
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <div class="Contenedor_Text_Razas">
+        <h1><u>Razas Mas Comunes:</u></h1>
+        <br>
+        <nav>
+           <button class="button_Perros" onclick="mostrar_Miniatura();">Miniatura</button>
+           <button class="button_Perros" onclick="mostrar_Pequeños();">Pequeños</button>
+           <button class="button_Perros" onclick="mostrar_Medianos();">Medianos</button>
+        </nav>
+        <script>
+            function mostrar_Miniatura(){
+                document.getElementById('Hide_Miniatura').style.display= 'block';
+                document.getElementById('Hide_Pequeños').style.display= 'none';
+                document.getElementById('Hide_Medianos').style.display= 'none';
+                document.getElementById('Hide_Grandes').style.display= 'none';
+                document.getElementById('Hide_Gigantes').style.display= 'none';
+            }
+            function mostrar_Pequeños(){
+                document.getElementById('Hide_Miniatura').style.display= 'none';
+                document.getElementById('Hide_Pequeños').style.display= 'block';
+                document.getElementById('Hide_Medianos').style.display= 'none';
+                document.getElementById('Hide_Grandes').style.display= 'none';
+                document.getElementById('Hide_Gigantes').style.display= 'none';
+            }
+            function mostrar_Medianos(){
+                document.getElementById('Hide_Miniatura').style.display= 'none';
+                document.getElementById('Hide_Pequeños').style.display= 'none';
+                document.getElementById('Hide_Medianos').style.display= 'block';
+                document.getElementById('Hide_Grandes').style.display= 'none';
+                document.getElementById('Hide_Gigantes').style.display= 'none';
+            }
+            function mostrar_Grandes(){
+                document.getElementById('Hide_Miniatura').style.display= 'none';
+                document.getElementById('Hide_Pequeños').style.display= 'none';
+                document.getElementById('Hide_Medianos').style.display= 'none';
+                document.getElementById('Hide_Grandes').style.display= 'block';
+                document.getElementById('Hide_Gigantes').style.display= 'none';
+            }
+            function mostrar_Gigantes(){
+                document.getElementById('Hide_Miniatura').style.display= 'none';
+                document.getElementById('Hide_Pequeños').style.display= 'none';
+                document.getElementById('Hide_Medianos').style.display= 'none';
+                document.getElementById('Hide_Grandes').style.display= 'none';
+                document.getElementById('Hide_Gigantes').style.display= 'block';
+            }
+        </script>
+        <br>
+        <br>
+        <div class="Hide" id="Hide_Miniatura"> 
+            <h3 style="margin-left: 1vw; display: inline;">Miniatura- </h3><h4 style="display: inline;">Perros de hasta 4kg</h4>
+            <br>
+            <br>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Miniatura/Bichon_Boloñes.jpeg" alt="Bichón Boloñés" class="Img_Razas">
+                <br>
+                <p class="Centrar">Bichón Boloñés</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Miniatura/Bicho_Maltes.jpeg" alt="Bichón Maltés"  class="Img_Razas">
+                <br>
+                <p class="Centrar">Bichón Boloñés</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Miniatura/Chihuahua.jpeg" alt="Chihuahua"  class="Img_Razas">
+                <br>
+                <p class="Centrar">Chihuahua</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Miniatura/Perro Crestado de China.jpeg" alt="Perro Crestado de China"  class="Img_Razas">
+                <br>
+                <p class="Centrar">Perro Crestado de China</p>
+            </div>
+            <br>
+            <br>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Miniatura/Petit brabancon.jpeg" alt="Petit brabancon"  class="Img_Razas">
+                <br>
+                <p class="Centrar">Petit brabancon</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Miniatura/Pomeranian.jpeg" alt="Pomeranian"  class="Img_Razas">
+                <br>
+                <p class="Centrar">Pomeranian</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Miniatura/Spaniel Contienental Enano.jpeg" alt="Spaniel Contienental Enano"  class="Img_Razas">
+                <br>
+                <p class="Centrar">Spaniel Contienental Enano</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Miniatura/Spaniel Japonés.jpeg" alt="Spaniel Japonés"  class="Img_Razas">
+                <br>
+                <p class="Centrar">Spaniel Japonés</p>
+            </div>
+            <br>
+            <br>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Miniatura/Terrier Inglés Miniatura.jpeg" alt="Terrier Inglés Miniatura"  class="Img_Razas">
+                <br>
+                <p class="Centrar">Terrier Inglés Miniatura</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Miniatura/Terrier sedoso australiano.jpeg" alt="Terrier sedoso australiano"  class="Img_Razas">
+                <br>
+                <p class="Centrar">Terrier sedoso australiano</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Miniatura/Yorkshire terrier.jpeg" alt="Yorkshire terrier"  class="Img_Razas">
+                <br>
+                <p class="Centrar">Yorkshire terrier</p>
+            </div>
+        </div>
+        <div class="Hide" id="Hide_Pequeños">
+            <h3 style="margin-left: 1vw; display: inline;">Pequeños- </h3><h4 style="display: inline;">Perros de hasta 5kg hasta 10kg</h4>
+            <br>
+            <br>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Affenpinscher.jpeg" alt="Affenpinscher" class="Img_Razas">
+                <br>
+                <p class="Centrar">Affenpinscher</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Basset Leonado de Bretaña.jpeg" alt="Basset Leonado de Bretaña" class="Img_Razas">
+                <br>
+                <p class="Centrar">Basset Leonado de Bretaña</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Bedlington Terrier.jpeg" alt="Bedlington Terrier" class="Img_Razas">
+                <br>
+                <p class="Centrar">Bedlington Terrier</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Bichón frisé.jpeg" alt="Bichón frisé" class="Img_Razas">
+                <br>
+                <p class="Centrar">Bichón frisé</p>
+            </div>
+            <br>
+            <br>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Bichón habanero.jpeg" alt="Bichón habanero" class="Img_Razas">
+                <br>
+                <p class="Centrar">Bichón habanero</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Border terrier.jpeg" alt="Border terrier" class="Img_Razas">
+                <br>
+                <p class="Centrar">Border terrier</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Boston Terrier.jpeg" alt="Boston Terrier" class="Img_Razas">
+                <br>
+                <p class="Centrar">Boston Terrier</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Bull Terrier.jpeg" alt="Bull Terrier" class="Img_Razas">
+                <br>
+                <p class="Centrar">Bull Terrier</p>
+            </div>
+            <br>
+            <br>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Cairn Terrier.jpeg" alt="Cairn Terrier" class="Img_Razas">
+                <br>
+                <p class="Centrar">Cairn Terrier</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Carlino.jpeg" alt="Carlino" class="Img_Razas">
+                <br>
+                <p class="Centrar">Carlino</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Cavalier King Charles.jpeg" alt="Cavalier King Charles" class="Img_Razas">
+                <br>
+                <p class="Centrar">Cavalier King Charles</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Coton de Tulear.jpeg" alt="Coton de Tulear" class="Img_Razas">
+                <br>
+                <p class="Centrar">Coton de Tulear</p>
+            </div>
+            <br>
+            <br>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Dandie Dinmont Terrier.jpeg" alt="Dandie Dinmont Terrier" class="Img_Razas">
+                <br>
+                <p class="Centrar">Dandie Dinmont Terrier</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Fox terrier de pelo liso.jpeg" alt="Fox terrier de pelo liso" class="Img_Razas">
+                <br>
+                <p class="Centrar">Fox terrier de pelo liso</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Grifón de Bruselas.jpeg" alt="Grifón de Bruselas" class="Img_Razas">
+                <br>
+                <p class="Centrar">Grifón de Bruselas</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Grifón Belga.jpeg" alt="Grifón Belga" class="Img_Razas">
+                <br>
+                <p class="Centrar">Grifón Belga</p>
+            </div>
+            <br>
+            <br>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Lakeland terrier.jpeg" alt="Lakeland terrier" class="Img_Razas">
+                <br>
+                <p class="Centrar">Lakeland terrier</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Lhasa apso.jpeg" alt="Lhasa apso" class="Img_Razas">
+                <br>
+                <p class="Centrar">Lhasa apso</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Lundehund Noruego.jpeg" alt="Lundehund Noruego" class="Img_Razas">
+                <br>
+                <p class="Centrar">Lundehund Noruego</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Mudi.jpeg" alt="Mudi" class="Img_Razas">
+                <br>
+                <p class="Centrar">Mudi</p>
+            </div>
+            <br>
+            <br>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Pastor de los Pirineos de cara rasa.jpeg" alt="Pastor de los Pirineos de cara rasa" class="Img_Razas">
+                <br>
+                <p class="Centrar">Pastor Pirineos de cara rasa</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Pastor de los Pirineos.jpeg" alt="Pastor de los Pirineos" class="Img_Razas">
+                <br>
+                <p class="Centrar">Pastor de los Pirineos</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Pastor de Shetland.jpeg" alt="Pastor de Shetland" class="Img_Razas">
+                <br>
+                <p class="Centrar">Pastor de Shetland</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Pekinés.jpeg" alt="Pekinés" class="Img_Razas">
+                <br>
+                <p class="Centrar">Pekinés</p>
+            </div>
+            <br>
+            <br>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Pequeño Lebrel Italiano.jpeg" alt="Pequeño Lebrel Italiano" class="Img_Razas">
+                <br>
+                <p class="Centrar">Pequeño Lebrel Italiano</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Pequeño Perro león.jpeg" alt="Pequeño Perro león" class="Img_Razas">
+                <br>
+                <p class="Centrar">Pequeño Perro león</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Perro de granja danés y sueco.jpeg" alt="Perro de granja danés y sueco" class="Img_Razas">
+                <br>
+                <p class="Centrar">Perro de granja danés y sueco</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Pinscher miniatura.jpeg" alt="Pinscher miniatura" class="Img_Razas">
+                <br>
+                <p class="Centrar">Pinscher miniatura</p>
+            </div>
+            <br>
+            <br>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Pumi.jpeg" alt="Pumi" class="Img_Razas">
+                <br>
+                <p class="Centrar">Pumi</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Schipperke.jpeg" alt="Schipperke" class="Img_Razas">
+                <br>
+                <p class="Centrar">Schipperke</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Schnauzer Miniatura.jpeg" alt="Schnauzer Miniatura" class="Img_Razas">
+                <br>
+                <p class="Centrar">Schnauzer Miniatura</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Schnauzer Miniatura.jpeg" alt="Schnauzer Miniatura" class="Img_Razas">
+                <br>
+                <p class="Centrar">Schnauzer Miniatura</p>
+            </div>
+            <br>
+            <br>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Shiba inu.jpeg" alt="Shiba inu" class="Img_Razas">
+                <br>
+                <p class="Centrar">Shiba inu</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Shih Tzu.jpeg" alt="Shih Tzu" class="Img_Razas">
+                <br>
+                <p class="Centrar">Shih Tzu</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Skye terrier.jpeg" alt="Skye terrier" class="Img_Razas">
+                <br>
+                <p class="Centrar">Skye terrier</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Spaniel Tibetano.jpeg" alt="Spaniel Tibetano" class="Img_Razas">
+                <br>
+                <p class="Centrar">Spaniel Tibetano</p>
+            </div>
+            <br>
+            <br>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Spitz de los Visigodos.jpeg" alt="Spitz de los Visigodos" class="Img_Razas">
+                <br>
+                <p class="Centrar">Spitz de los Visigodos</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Spitz japonés.jpeg" alt="Spitz japonés" class="Img_Razas">
+                <br>
+                <p class="Centrar">Spitz japonés</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Teckel.jpeg" alt="Teckel" class="Img_Razas">
+                <br>
+                <p class="Centrar">Teckel</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Terrier australiano.jpeg" alt="Terrier australiano" class="Img_Razas">
+                <br>
+                <p class="Centrar">Terrier australiano</p>
+            </div>
+            <br>
+            <br>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Terrier brasileño.jpeg" alt="Terrier brasileño" class="Img_Razas">
+                <br>
+                <p class="Centrar">Terrier brasileño</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Terrier cazador alemán.jpeg" alt="Terrier cazador alemán" class="Img_Razas">
+                <br>
+                <p class="Centrar">Terrier cazador alemán</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Terrier Checo.jpeg" alt="Terrier Checon" class="Img_Razas">
+                <br>
+                <p class="Centrar">Terrier Checo</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Terrier de Manchester.jpeg" alt="Terrier de Manchester" class="Img_Razas">
+                <br>
+                <p class="Centrar">Terrier de Manchester</p>
+            </div>
+            <br>
+            <br>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Terrier de Norfolk.jpeg" alt="Terrier de Norfolk" class="Img_Razas">
+                <br>
+                <p class="Centrar">Terrier de Norfolk</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Terrier de Norwich.jpeg" alt="Terrier de Norwich" class="Img_Razas">
+                <br>
+                <p class="Centrar">Terrier de Norwich</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Terrier de Sealyham.jpeg" alt="Terrier de Sealyham" class="Img_Razas">
+                <br>
+                <p class="Centrar">Terrier de Sealyham</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Terrier escocés.jpeg" alt="Terrier escocés" class="Img_Razas">
+                <br>
+                <p class="Centrar">Terrier escocés</p>
+            </div>
+            <br>
+            <br>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Terrier galés.jpeg" alt="Terrier galés" class="Img_Razas">
+                <br>
+                <p class="Centrar">Terrier galés</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Terrier japonés.jpeg" alt="Terrier japonés" class="Img_Razas">
+                <br>
+                <p class="Centrar">Terrier japonés</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Volpino italiano.jpeg" alt="Volpino italiano" class="Img_Razas">
+                <br>
+                <p class="Centrar">Volpino italiano</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/West Highland white terrier.jpeg" alt="West Highland white terrier" class="Img_Razas">
+                <br>
+                <p class="Centrar">West Highland white terrier</p>
+            </div>
+            <br>
+            <br>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Pequeño/Whippet.jpeg" alt="Whippet" class="Img_Razas">
+                <br>
+                <p class="Centrar">Whippet</p>
+            </div>
+        </div>
+        <div class="Hide" id="Hide_Medianos">
+            <h3 style="margin-left: 1vw; display: inline;">Medianos- </h3><h4 style="display: inline;">Perros de hasta 11kg hasta 25kg</h4>
+            <br>
+            <br>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Airedale Terrier.jpeg" alt="Airedale Terrier" class="Img_Razas">
+                <br>
+                <p class="Centrar">Airedale <br>Terrier</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/American Stanffordshire terrier.jpeg" alt="American Stanffordshire terrier" class="Img_Razas">
+                <br>
+                <p class="Centrar">American Stanffordshire <br>terrier</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Ariegeois.jpeg" alt="Ariegeois" class="Img_Razas">
+                <br>
+                <p class="Centrar"><br>Ariegeois</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Barbet.jpeg" alt="Barbet" class="Img_Razas">
+                <br>
+                <p class="Centrar"><br>Barbet</p>
+            </div>
+            <br>
+            <br>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Basenji.jpeg" alt="Basenji" class="Img_Razas">
+                <br>
+                <p class="Centrar"><br>Basenji</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Basset artesiano de Normandía.jpeg" alt="Basset artesiano de Normandía" class="Img_Razas">
+                <br>
+                <p class="Centrar">Basset artesiano de <br>Normandía</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Basset de los Alpes.jpeg" alt="Basset de los Alpes" class="Img_Razas">
+                <br>
+                <p class="Centrar">Basset de los <br>Alpes</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Beagle.jpeg" alt="Beagle" class="Img_Razas">
+                <br>
+                <p class="Centrar"><br>Beagle</p>
+            </div>
+            <br>
+            <br>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Beagle harrier.jpeg" alt="Beagle harrier" class="Img_Razas">
+                <br>
+                <p class="Centrar">Beagle <br>harrier</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Border collie.jpeg" alt="Border collie" class="Img_Razas">
+                <br>
+                <p class="Centrar">Border <br>collie</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Boyero de Appenzell.jpeg" alt="Boyero de Appenzell" class="Img_Razas">
+                <br>
+                <p class="Centrar">Boyero de <br>Appenzell</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Boyero de las Ardenas.jpeg" alt="Boyero de las Ardenas" class="Img_Razas">
+                <br>
+                <p class="Centrar">Boyero de las <br>Ardenas</p>
+            </div>
+            <br>
+            <br>    
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Braco del Ariege.jpeg" alt="Braco del Ariege" class="Img_Razas">
+                <br>
+                <p class="Centrar">Braco del <br>Ariege</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Braco del Borbonesado.jpeg" alt="Braco del Borbonesado" class="Img_Razas">
+                <br>
+                <p class="Centrar">Braco del <br>Borbonesado</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Braco eslovaco de pelo duro.jpeg" alt="Braco eslovaco de pelo duro" class="Img_Razas">
+                <br>
+                <p class="Centrar">Braco eslovaco de <br>pelo duro</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Braco francés.jpeg" alt="Braco francés" class="Img_Razas">
+                <br>
+                <p class="Centrar">Braco <br>francés</p>
+            </div>
+            <br>
+            <br>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Braco húngaro de pelo corto.jpeg" alt="Braco húngaro de pelo corto" class="Img_Razas">
+                <br>
+                <p class="Centrar">Braco húngaro de <br>pelo corto</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Braco Saint-Germain.jpeg" alt="Braco Saint-Germain" class="Img_Razas">
+                <br>
+                <p class="Centrar">Braco <br>Saint-Germain</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Briquet griffon vendeano.jpeg" alt="Briquet griffon vendeano" class="Img_Razas">
+                <br>
+                <p class="Centrar">Briquet griffon <br>vendeano</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Buhund noruego.jpeg" alt="Buhund noruego" class="Img_Razas">
+                <br>
+                <p class="Centrar">Buhund <br>noruego</p>
+            </div>
+            <br>
+            <br>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Bulldog francés.jpeg" alt="Bulldog francés" class="Img_Razas">
+                <br>
+                <p class="Centrar">Bulldog <br>francés</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Bulldog inglés.jpeg" alt="Bulldog inglés" class="Img_Razas">
+                <br>
+                <p class="Centrar">Bulldog <br>inglés</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Caniche.jpeg" alt="Caniche" class="Img_Razas">
+                <br>
+                <p class="Centrar"><br>Caniche</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Cazador de alces noruego.jpeg" alt="Cazador de alces noruego" class="Img_Razas">
+                <br>
+                <p class="Centrar">Cazador de alces <br>noruego</p>
+            </div>
+            <br>
+            <br>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Chow chow.jpeg" alt="Chow chow" class="Img_Razas">
+                <br>
+                <p class="Centrar">Chow <br>chow</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Cirneco de Etna.jpeg" alt="Cirneco de Etna" class="Img_Razas">
+                <br>
+                <p class="Centrar">Cirneco de <br>Etna</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Cocker americano.jpeg" alt="Cocker americano" class="Img_Razas">
+                <br>
+                <p class="Centrar">Cocker <br>americano</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Cocker inglés.jpeg" alt="Cocker inglés" class="Img_Razas">
+                <br>
+                <p class="Centrar">Cocker <br>inglés</p>
+            </div>
+            <br>
+            <br>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Collie de Pelo Largo.jpeg" alt="Collie de Pelo Largo" class="Img_Razas">
+                <br>
+                <p class="Centrar">Collie de Pelo <br>Largo</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Collie de Pelo Corto.jpeg" alt="Collie de Pelo Corto" class="Img_Razas">
+                <br>
+                <p class="Centrar">Collie de Pelo <br>Corto</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Drever.jpeg" alt="Drever" class="Img_Razas">
+                <br>
+                <p class="Centrar"><br>Drever</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Eurásico.jpeg" alt="Eurásico" class="Img_Razas">
+                <br>
+                <p class="Centrar"><br>Eurásico</p>
+            </div>
+            <br>
+            <br>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Foxhoynd americano.jpeg" alt="Foxhoynd americano" class="Img_Razas">
+                <br>
+                <p class="Centrar">Foxhoynd <br>americano</p>
+            </div>
+            <div class="Caja_Razas"> 
+                <img src="../Imagenes/Razas/Mediano/Grifón leonardo de Bretaña.jpeg " alt="Grifón leonardo de Bretaña" class="Img_Razas">
+                <br>
+                <p class="Centrar">Grifón leonardo<br>de Bretaña</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+</body>
+<footer id="Footer">
+    <div>
+        Este Proyecto fue Posible gracias a la ayuda y Colaboración de los Alumnos de 6to Semestre de Programación del Grupo B.
+        <br>
+        <b>Integrantes:</b>
+        <ul style="display: block;">
+            <li style="display: inline; padding-left: 3vw;">Mora Ramirez Kate América</li>
+            <li style="display: inline; padding-left: 3vw;">Matus Basurto Mariana</li>
+            <li style="display: inline; padding-left: 3vw;">Silva Hernández Melisa</li>
+            <br>
+            <br>
+            <li style="display: inline; padding-left: 3vw;">Cerón Bolaños Isaac Haziel</li>
+            <li style="display: inline; padding-left: 3vw;">Erik Rubén Pérez López</li>
+            <li style="display: inline; padding-left: 3vw;">Rodriguez Martinez Oscar Manuel</li>
+        </ul>
+</div>
+</footer>
+</html>
